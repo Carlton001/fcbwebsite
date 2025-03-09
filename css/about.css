@@ -1,0 +1,301 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.home {
+    background: #004c99;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 40vh;
+    background: #004D98;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all 0.5s ease;
+}
+
+.navlist.open {
+    right: 0;
+}
+
+.navlist {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+
+.about {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+    font-size: 32px;
+    color: #004c99;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stad {
+    background: #004c99;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stad:hover {
+    transform: scale(1.05);
+    background: #ececec;
+    color: #004c99;
+}
+
+.stad p:hover {
+    transform: scale(1.05);
+    background: #ececec;
+    color: #004c99;
+}
+
+.club-history, .trophies {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.club-history p{
+    font-size: 20px;
+    color: #004c99;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.club-history h2, .trophies h2 {
+    font-size: 28px;
+    color: #004c99;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.trophy-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.trophy {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trophy img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.trophy p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #004c99;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+.trophy-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.trophy {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 260px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.trophy img {
+    width: 200px;
+    height: fit-content;
+    margin-bottom: 12px;
+    transition: transform 0.3s;
+}
+
+.trophy:hover img {
+    transform: scale(1.1);
+}
+
+.trophy p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #004c99;
+}
+.club-values {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.club-values ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    color: #004c99;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.club-values h2{
+    color: #004c99;
+}
+
+.club-values ul li {
+    background: #004c99;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.club-values ul li:hover {
+    background: #ffcc00;
+    color: #004c99;
+}
+
+.team-vision {
+    background: linear-gradient(135deg, #004c99, #005bbb);
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.team-vision:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #005bbb, #0073e6);
+}
+
+.team-vision p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .stad {
+        width: 90%;
+    }
+
+    .trophy-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trophy {
+        width: 80%;
+    }
+
+    .about h1, .club-history h2, .trophies h2, .club-values h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about h1, .club-history h2, .trophies h2, .club-values h2 {
+        font-size: 24px;
+    }
+
+    .club-history p, .team-vision p {
+        font-size: 16px;
+    }
+
+    .club-values ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trophy img {
+        width: 150px;
+        height: auto;
+    }
+}
